@@ -1,0 +1,22 @@
+2.3:
+-added new lavatex by qray
+-fixed lavalevel errorspam with some games
+-renamed lava2.1.lua to lava.lua (for easy overwriting for future updates)
+
+2.2:
+-extended lava beyond map edges
+-removed foam.tga (unused)
+-optimized lavasplosions (thanks nixtux)
+
+2.1:
+-fixed messed up partially see through units if /luashaders off
+-added readme
+
+Lava Shader package:
+
+Assembled by The_Yak
+Knorke, Beherith, Anarchid, The_Yak - Lava gadget
+Audionautics, e__ - Lava SFX from freesound.org
+lava textures - yhughes, mavrosh, sadronmeldir
+Kloot - Hover waterdamage workaround
+[BoS]nixtux - Improved lavasplosions
