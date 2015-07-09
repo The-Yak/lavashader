@@ -197,6 +197,7 @@ function gadget:Initialize()
 			]],  
 		 
 			fragment = [[
+			  #define M_PI 3.1415926535897932384626433832795
 			  varying vec3 normal;
 			  varying vec3 eyeVec;
 			  varying vec3 color;
@@ -216,8 +217,13 @@ function gadget:Initialize()
 				vec2 distortion;
 				distortion.x=gl_TexCoord[0].s+sin(gl_TexCoord[0].s*20 +sintime/50)/350;
 				distortion.y=gl_TexCoord[0].t+sin(gl_TexCoord[0].t*20 +sintime/73)/400;
-				vec4 vlavacolor=texture2D(lavacolor,distortion);
+				vec4 vlavacolor=texture2D(lavacolor,distortion) + 0.1;
 				
+				vec2 distortion2;
+				distortion2 = (distortion + M_PI * 12) * M_PI / 9;
+				vec4 vlavacolor2=texture2D(lavacolor,distortion2) * 2 + 0.1;
+				vlavacolor *= vlavacolor2;
+
 				//-------------------------------------------
 				//The next 3 lines make the lava glow more at the edges, 
 				//it looks up the height from a texture, and if the height is close to lava height, it adds a lot of glow.
