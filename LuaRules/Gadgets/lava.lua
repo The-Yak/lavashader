@@ -32,6 +32,8 @@ gameframe=0
 
 
 function gadget:Initialize()
+	 _G.lavaLevel = lavaLevel
+	 _G.frame = 0
 	 addTideRhym (0, 0, 5*6000)
 	-- addTideRhym (150, 0.25, 3)
 	-- addTideRhym (-20, 0.25, 5*60)
