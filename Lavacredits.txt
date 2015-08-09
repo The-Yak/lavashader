@@ -1,3 +1,8 @@
+2.4:
+-replaced gui_music_ambience_loop.lua with klon's ambientplayer.lua
+-lava now renders before game start (gajop)
+-combine lava texture at different resolution to reduce texture repetition (gajop)
+
 2.3:
 -added new lavatex by qray
 -fixed lavalevel errorspam with some games
@@ -15,8 +20,9 @@
 Lava Shader package:
 
 Assembled by The_Yak
-Knorke, Beherith, Anarchid, The_Yak - Lava gadget
+Knorke, Beherith, Anarchid, The_Yak, Gajop - Lava gadget
 Audionautics, e__ - Lava SFX from freesound.org
 lava textures - yhughes, mavrosh, sadronmeldir
 Kloot - Hover waterdamage workaround
 [BoS]nixtux - Improved lavasplosions
+Klon - ambient sfx widget
