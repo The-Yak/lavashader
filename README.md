@@ -14,8 +14,3 @@ Find all instances of lavacolor3.png in lava gadget and change to desired image 
 Can I change the height of the lavaplane?
 -----------
 Yes, just change lavaLevel, but this will break hover playability. Right now it is set equal to waterlevel.
-
-
-Can this extend beyond map edges/onto an infinite plane?
------------
-As of version 2.2, somewhat, not an infinite plane but a large one
